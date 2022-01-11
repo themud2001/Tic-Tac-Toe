@@ -12,6 +12,7 @@ function initGame() {
 
     function restartGame() {
         container.removeEventListener("click", handleTicTacToeClick);
+        buttonElement.removeEventListener("click", restartGame);
     
         const rows = document.getElementById("tictactoe-container").getElementsByClassName("game")[0].children;
         for (let i=0; i<3; i++) {
