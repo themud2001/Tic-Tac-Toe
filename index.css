@@ -1,0 +1,34 @@
+﻿#tictactoe-container {
+    font-family: "Roboto", sans-serif;
+}
+
+#tictactoe-container .game {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tictactoe-container .game .row-1, .row-2, .row-3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tictactoe-container .game .row-1, .row-2 {
+    border-bottom: 2px solid black;
+}
+
+#tictactoe-container .game .col {
+    border: 2px solid #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-weight: bold;
+    font-size: 26px;
+    align-items: center;
+    justify-content: center;
+}
